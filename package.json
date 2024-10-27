@@ -19,10 +19,12 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@prisma/client": "^4.8.0",
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.4",
+    "prisma": "^4.8.0",
     "questoes-de-concursos-back": "file:"
   }
 }
