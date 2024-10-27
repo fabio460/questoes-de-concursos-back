@@ -64,9 +64,9 @@ export const atualizar = async(req:Request, res:Response)=>{
               id
             }
         })
-        res.json("Usuário atualizado com sucesso!")
+        res.json("Questão atualizada com sucesso!")
     } catch (error) {
-        res.status(500).json("Falha ao atualizar usuário, motivo"+error)
+        res.status(500).json("Falha ao atualizar questão, motivo"+error)
     }
 }
 
@@ -76,8 +76,8 @@ export const deletar = async(req:Request, res:Response)=>{
         const r = await prisma.questao.delete({
             where:{id}
         })
-        res.json("Usuário deletado com sucesso!")
+        res.json("Questão deletado com sucesso!")
     } catch (error) {
-        res.status(500).json("Falha ao deletar usuário, motivo"+error)
+        res.status(500).json("Falha ao deletar quastão, motivo"+error)
     }
 }
